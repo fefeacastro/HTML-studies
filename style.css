@@ -25,14 +25,17 @@ h1{
   
   /* Add a card effect for articles */
   .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+    cursor: pointer;
   }
 
   .column {
     float: left;
-    width: 33.33%;
+    width: 31.8%;
+    padding: 0 10px;
   }
   
   /* Clear floats after the columns */
@@ -46,5 +49,6 @@ h1{
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
