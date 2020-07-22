@@ -1,1 +1,1 @@
-# StaticBlog
+# HTML-studies
