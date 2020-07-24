@@ -45,6 +45,18 @@ h1{
     clear: both;
   }
   
+/* close button inside the post */
+.closebtn {
+  float: right;
+  color:black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.containerTab {
+  background-color: white;
+  padding: 20px;
+}
   /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
