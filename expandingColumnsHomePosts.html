@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title>Blog Estatico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Blog Estatico</h1>
+        </div>
+    </header>
+    <div class="row">
+        <div class="expandingColumn">
+            <div class="card" onclick="openPost('post1');">
+                <h2>Titulo 1</h2>
+            </div>
+        </div>
+        <div class="expandingColumn">
+            <div class="card" onclick="openPost('post2');">
+                <h2>Titulo 2</h2>
+            </div>
+        </div>
+        <div class="expandingColumn">
+            <div class="card" onclick="openPost('post3');">
+                <h2>Titulo 3</h2>
+            </div>
+        </div>
+    </div>
+  <!-- Full-width columns: (hidden by default) -->
+    <div id="post1" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fakeimg" style="height:300px;">Image</div>
+            </div>
+            <div class="col-md-6">
+                <h2>Titulo 1</h2>
+                <h5>subtitulo, Julho 22, 2020</h5>        
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+    <div id="post2" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fakeimg" style="height:300px;">Image</div>
+            </div>
+            <div class="col-md-6">
+                <h2>Titulo 2</h2>
+                <h5>subtitulo, Julho 21, 2020</h5>        
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+    <div id="post3" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fakeimg" style="height:300px;">Image</div>
+            </div>
+            <div class="col-md-6">
+                <h2>Titulo 3</h2>
+                <h5>subtitulo, Julho 20, 2020</h5>        
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+    <!-- another row -->
+    <div class="row">
+        <div class="expandingColumn">
+            <div class="card" onclick="openPost('post4');">
+                <h2>Titulo 4</h2>
+            </div>
+        </div>
+        <div class="expandingColumn">
+            <div class="card" onclick="openPost('post5');">
+            <h2>Titulo 5</h2>
+        </div>
+        </div>
+        <div class="expandingColumn">
+            <div class="card" onclick="openPost('post6');">
+            <h2>Titulo 6</h2>
+        </div>
+        </div>
+    </div>
+  <!-- Full-width columns: (hidden by default) -->
+    <div id="post4" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fakeimg" style="height:300px;">Image</div>
+            </div>
+            <div class="col-md-6">
+                <h2>Titulo 4</h2>
+                <h5>subtitulo, Julho 19, 2020</h5>        
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+    <div id="post5" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fakeimg" style="height:300px;">Image</div>
+            </div>
+            <div class="col-md-6">
+                <h2>Titulo 5</h2>
+                <h5>subtitulo, Julho 18, 2020</h5>        
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+    <div id="post6" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fakeimg" style="height:300px;">Image</div>
+            </div>
+            <div class="col-md-6">
+                <h2>Titulo 6</h2>
+                <h5>subtitulo, Julho 18, 2020</h5>        
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- JS here -->
+    <script src="./expandPost.js"></script>
+</body>
+</html>
