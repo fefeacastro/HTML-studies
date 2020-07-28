@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'source_serif_proregular';
+    src: url('sourceserifpro-regular-webfont.woff2') format('woff2'),
+         url('sourceserifpro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
