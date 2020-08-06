@@ -1,14 +1,14 @@
 <template>
-  <Posts />
+  <Blog />
 </template>
 
 <script>
-import Posts from './components/Posts'
+import Blog from './components/Blog'
 
 export default {
   name: 'App',
   components: {
-    Posts
+    Blog
   }
 }
 </script>

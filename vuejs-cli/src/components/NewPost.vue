@@ -26,20 +26,16 @@ export default{
     methods: {
         addPost(){
             console.log("chamado");
-            if(this.title.trim() === '' || this.postMessage.trim() === ''){
+            if(this.postMessage.trim() === ''){
                 return;
             }
-            console.log(this.title);
-            console.log(this.postMessage);
-            this.posts.push({
+            
+            this.$emit('add-post', {
                 title: this.title,
-                postMessage: this.postMessage
+                postMessage: this.postMessage,
             });
             this.title = '';
             this.postMessage = '';
-        },
-        removePost(index){
-            this.posts.splice(index,1);
         }
     }
 }
