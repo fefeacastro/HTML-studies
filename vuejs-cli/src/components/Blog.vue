@@ -1,17 +1,18 @@
 <template>
     <div class="container">
-        <h1> Blog</h1>
+        <h2>Posts</h2>
         <hr />
         <div class="list-group">
-            <p v-if="posts.lenght <= 0">Sem comentários</p>
-            <div class="list-group-item" v-for="(post,index) in allPosts"  v-bind:key="post">
-                <span class="post_title"><strong>{{ post.title }}</strong></span>
+            <p v-if="posts.length <= 0">Nenhum Post</p>
+            <div class="list-group-item card" v-for="(post, index) in allPosts"  v-bind:key="post">
+                <h2><strong>{{ post.title }}</strong></h2>
                 <p>{{post.postMessage}}</p>
                 <div>
                     <a href="#" title="Excluir" v-on:click.prevent="removePost(index)">Excluir</a>
                 </div>
             </div>
         </div>
+        <hr />
         <NewPost v-on:add-post="addPost"></NewPost>
     </div>
 </template>
@@ -29,7 +30,7 @@ export default {
     },
     methods: {
         addPost(post){
-            this.posts.push(post);
+            this.posts.unshift(post);
         },
         removePost(index){
             this.posts.splice(index,1);
